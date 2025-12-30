@@ -12,7 +12,7 @@ int decValue::GetCounter()
 
 double decValue::GetValueArray()
 {
-    std::cin >> counter;
+    
     for(int i = 0; i < counter;++i){
     return valueArray.at(i);
     std::cout << " " << std::endl;
@@ -21,10 +21,14 @@ double decValue::GetValueArray()
 
 void decValue::SetUserValue(double uVal)
 {
+   userValue = uVal;  
 }
 
 void decValue::LoadValArr(double valArr)
 {
+    int count = 0;
+    count = GetCounter();
+    for(int i = 0; i < count; ++i){
 }
 
 void decValue::Print()
@@ -33,4 +37,5 @@ void decValue::Print()
 
 void decValue::SetCounter(int count)
 {
+    std::cin >> counter;
 }
