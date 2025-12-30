@@ -29,6 +29,9 @@ void decValue::LoadValArr(double valArr)
     int count = 0;
     count = GetCounter();
     for(int i = 0; i < count; ++i){
+        valueArray.push_back(GetUserValue());
+
+    }
 }
 
 void decValue::Print()
