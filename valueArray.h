@@ -6,7 +6,7 @@ class decValue{
     private:
         double userValue = 0;
         int counter = 0;
-        double<vector> valueArray;
+        std::vector<double> valueArray;
     public:
         double GetUserValue();
         int GetCounter();
@@ -15,5 +15,7 @@ class decValue{
         void SetUserValue(double uVal);
         void SetCounter(int count);
         void SetUserValue(double valArr);
+        void LoadValArr(double valArr);
+        void Print();
 
     }
